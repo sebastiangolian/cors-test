@@ -82,8 +82,7 @@
             document.getElementById("response").textContent = responseText;
           })
           .catch((error) => {
-            document.getElementById("result").textContent =
-              "The URL is blocked by CORS or a network error occurred.";
+            document.getElementById("result").textContent = ""; // Clear the result
             document.getElementById("response").textContent = error.message;
           });
       }
